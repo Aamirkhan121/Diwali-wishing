@@ -6,6 +6,10 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
 }
 
 canvas {
@@ -19,12 +23,8 @@ canvas {
     font-size: 5vw; /* Responsive font size */
     color: white;
     z-index: 1;
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
     text-align: center;
     font-weight: 600;
-    transform: translate(-50%, -50%); /* Centering */
     line-height: 1.2; /* Adjust line height */
     animation: animHeading 2s linear infinite;
 }
