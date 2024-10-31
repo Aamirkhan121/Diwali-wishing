@@ -1,41 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     overflow: hidden;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.heading{
-    font-size: 4.5rem;
+canvas {
+    display: block; /* Remove extra space under canvas */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heading {
+    font-size: 5vw; /* Responsive font size */
     color: white;
     z-index: 1;
     position: absolute;
-    top: 45%;
-    left: 50%;
-    font-family: 'Poppins';
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
     text-align: center;
     font-weight: 600;
-    transform: translateX(-50%) translateY(-50%);
-    line-height: 70px;
+    transform: translate(-50%, -50%); /* Centering */
+    line-height: 1.2; /* Adjust line height */
     animation: animHeading 2s linear infinite;
 }
 
-.heading span{
-    font-size: 1rem;
+.heading span {
+    font-size: 1.5rem; /* Adjust span size for better readability */
     color: rgb(0, 156, 203);
 }
 
 @keyframes animHeading {
-    0%{
+    0% {
         filter: drop-shadow(0px 0px 50px rgba(13, 166, 255, 0.826)) hue-rotate(0deg);
-        
     }
-    50%{
+    50% {
         filter: drop-shadow(0px 0px 100px rgba(13, 166, 255, 0.826)) hue-rotate(120deg);
     }
-    100%{
+    100% {
         filter: drop-shadow(0px 0px 50px rgba(13, 166, 255, 0.826)) hue-rotate(0deg);
     }
 }
